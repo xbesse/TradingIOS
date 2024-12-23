@@ -1,7 +1,7 @@
 /**
  * Classe utilitaire pour le calcul des variations McGinley
  */
-class CalculateVariations {
+export default class CalculateVariations {
   /**
    * Calcule les variations McGinley pour différents intervalles de temps
    * @param {Array} mcginleyValues - Valeurs McGinley
@@ -66,6 +66,3 @@ class CalculateVariations {
     return ((currentValue - pastValue) / pastValue * 100).toFixed(2);
   }
 }
-
-// Exporter la classe pour une utilisation dans Node.js
-module.exports = CalculateVariations;

@@ -1,7 +1,7 @@
 /**
  * Classe utilitaire pour le calcul du McGinley Dynamic
  */
-class CalculateMcGinley {
+export default class CalculateMcGinley {
   /**
    * Calcule le McGinley Dynamic
    * @param {Array} data - Données OHLCV
@@ -87,6 +87,3 @@ class CalculateMcGinley {
     };
   }
 }
-
-// Exporter la classe pour une utilisation dans Node.js
-module.exports = CalculateMcGinley;

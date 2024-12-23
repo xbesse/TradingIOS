@@ -1,4 +1,4 @@
-const krakenAPI = require('./KrakenAPI.cjs');
+import krakenAPI from './KrakenAPI.js';
 
 const fetchMarketData = async (symbols) => {
   if (!symbols || symbols.length === 0) {
@@ -11,7 +11,6 @@ const fetchMarketData = async (symbols) => {
 
     const dataPromises = symbols.map(async (symbol) => {
       try {
-        
         const data = await krakenAPI.fetchOHLCData(
           symbol,
           krakenAPI.intervals[1] // 1-minute intervals
@@ -46,4 +45,4 @@ const fetchMarketData = async (symbols) => {
   }
 };
 
-module.exports = fetchMarketData;
+export default fetchMarketData;

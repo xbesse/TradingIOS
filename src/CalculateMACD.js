@@ -1,7 +1,7 @@
 /**
  * Classe utilitaire pour le calcul du MACD (Moving Average Convergence Divergence)
  */
-class CalculateMACD {
+export default class CalculateMACD {
   /**
    * Calcule l'EMA (Exponential Moving Average)
    * @param {Array} data - Données
@@ -29,6 +29,3 @@ class CalculateMACD {
     return ema;
   }
 }
-
-// Exporter la classe pour une utilisation dans Node.js
-module.exports = CalculateMACD;

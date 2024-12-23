@@ -1,10 +1,10 @@
-const TimeStamp = require('./Database.cjs');
-const CalculateMACD = require('./CalculateMACD.cjs');
+import TimeStamp from './Database.js';
+import CalculateMACD from './CalculateMACD.js';
 
 /**
  * Class to scale values
  */
-class Scaler {
+export default class Scaler {
     /**
      * Scales a value using the inverse tangent function, mapping the output to a range of [-1, 1].
      *
@@ -49,13 +49,12 @@ class Scaler {
      * @returns {number} The scaled value.
      */
     static sTransformation(value) {
-        const math = Math;
         if (value >= 0) {
             // For positive values, use the sigmoid function
-            return 1 / (1 + math.exp(-value));
+            return 1 / (1 + Math.exp(-value));
         } else {
             // For negative values, use the sigmoid function and negate the result
-            return -1 / (1 + math.exp(value));
+            return -1 / (1 + Math.exp(value));
         }
     }
 
@@ -68,18 +67,14 @@ class Scaler {
         const scaledData = {};
         
         for (const symbolName in marketData) {
-            
             const symbolData = marketData[symbolName];
-            
             scaledData[symbolName] = this.minMaxScaleOHLC(symbolData);
         }
 
         const timestampMap = {};
         
         for (const symbolData of Object.values(scaledData)) {
-            
             for (const candle of symbolData) {
-                
                 const timestamp = candle.timeStamp.toString();
 
                 if (!timestampMap[timestamp]) {
@@ -148,5 +143,3 @@ class Scaler {
         return scaledData;
     }
 }
-
-module.exports = Scaler;

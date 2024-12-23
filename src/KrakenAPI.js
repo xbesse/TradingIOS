@@ -1,4 +1,4 @@
-const  TimeStamp = require('./Database.cjs');
+import TimeStamp from './Database.js';
 
 class KrakenAPI {
     constructor() {
@@ -61,7 +61,6 @@ class KrakenAPI {
             throw new Error('Invalid symbol');
         }
 
-        const fetch = (await import('node-fetch')).default;
         const krakenSymbol = this.formatSymbol(symbol);
         const url = `${this.baseUrl}/OHLC?pair=${krakenSymbol}&interval=${interval}${since ? `&since=${since}` : ''}`;
 
@@ -86,4 +85,4 @@ class KrakenAPI {
     }
 }
 
-module.exports = new KrakenAPI();
+export default new KrakenAPI();

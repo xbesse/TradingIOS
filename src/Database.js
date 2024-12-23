@@ -1,5 +1,5 @@
 // Classe de gestion des dates
-class TimeStamp {
+export default class TimeStamp {
   constructor(year, month, day, hour, minute) {
     this.year = year.toString().padStart(4, '0');    // Année sur 4 chiffres
     this.month = month.toString().padStart(2, '0');  // Mois sur 2 chiffres
@@ -60,5 +60,3 @@ class TimeStamp {
     return 0;
   }
 }
-
-module.exports = TimeStamp;
