@@ -1,0 +1,177 @@
+[
+  {
+    "pair": "BTC/EUR",
+    "category": "Native coin",
+    "id": 1,
+    "selected": true
+  },
+  {
+    "pair": "ETH/EUR",
+    "category": "Native coin",
+    "id": 2,
+    "selected": true
+  },
+  {
+    "pair": "SOL/EUR",
+    "category": "Native coin",
+    "id": 3,
+    "selected": true
+  },
+  {
+    "pair": "LTC/EUR",
+    "category": "Native coin",
+    "id": 4,
+    "selected": true
+  },
+  {
+    "pair": "ADA/EUR",
+    "category": "Native coin",
+    "id": 5,
+    "selected": true
+  },
+  {
+    "pair": "BCH/EUR",
+    "category": "Native coin",
+    "id": 6,
+    "selected": true
+  },
+  {
+    "pair": "ETC/EUR",
+    "category": "Native coin",
+    "id": 7,
+    "selected": true
+  },
+  {
+    "pair": "DOGE/EUR",
+    "category": "Meme coin",
+    "id": 10,
+    "selected": true
+  },
+  {
+    "pair": "SHIB/EUR",
+    "category": "Meme coin",
+    "id": 11
+  },
+  {
+    "pair": "PEPE/EUR",
+    "category": "Meme coin",
+    "id": 12
+  },
+  {
+    "pair": "BONK/EUR",
+    "category": "Meme coin",
+    "id": 13
+  },
+  {
+    "pair": "FLOKI/EUR",
+    "category": "Meme coin",
+    "id": 14
+  },
+  {
+    "pair": "WIF/EUR",
+    "category": "Meme coin",
+    "id": 15
+  },
+  {
+    "pair": "AAVE/EUR",
+    "category": "Defi coin",
+    "id": 16,
+    "selected": true
+  },
+  {
+    "pair": "UNI/EUR",
+    "category": "Defi coin",
+    "id": 17,
+    "selected": true
+  },
+  {
+    "pair": "CRV/EUR",
+    "category": "Defi coin",
+    "id": 18,
+    "selected": true
+  },
+  {
+    "pair": "LDO/EUR",
+    "category": "Defi coin",
+    "id": 19,
+    "selected": true
+  },
+  {
+    "pair": "DOT/EUR",
+    "category": "Utility coin",
+    "id": 20,
+    "selected": true
+  },
+  {
+    "pair": "XLM/EUR",
+    "category": "Native coin",
+    "id": 21,
+    "selected": true
+  },
+  {
+    "pair": "EOS/EUR",
+    "category": "Native coin",
+    "id": 22,
+    "selected": true
+  },
+  {
+    "pair": "XRP/EUR",
+    "category": "Native coin",
+    "id": 23,
+    "selected": true
+  },
+  {
+    "pair": "NEAR/EUR",
+    "category": "Utility coin",
+    "id": 24,
+    "selected": true
+  },
+  {
+    "pair": "AVAX/EUR",
+    "category": "Utility coin",
+    "id": 25,
+    "selected": true
+  },
+  {
+    "pair": "ONDO/EUR",
+    "category": "Utility coin",
+    "id": 26,
+    "selected": true
+  },
+  {
+    "pair": "FIL/EUR",
+    "category": "Native coin",
+    "id": 27,
+    "selected": true
+  },
+  {
+    "pair": "INJ/EUR",
+    "category": "Utility coin",
+    "id": 28,
+    "selected": true
+  },
+  {
+    "pair": "FET/EUR",
+    "category": "Utility coin",
+    "id": 29,
+    "selected": true
+  },
+  {
+    "pair": "FTM/EUR",
+    "category": "Utility coin",
+    "id": 30,
+    "selected": true
+  },
+  {
+    "pair": "FIDA/EUR",
+    "category": "Utility coin",
+    "id": 31,
+    "selected": true
+  },
+  {
+    "pair": "ICP/EUR",
+    "category": "Utility coin",
+    "id": 32,
+    "selected": true
+  }
+]
